@@ -23,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                intent.putExtra("name", "Elidon");
+                intent.putExtra("number", 2024);
                 startActivity(intent);
             }
         });
